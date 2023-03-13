@@ -2,7 +2,7 @@ FROM python:3.9
 
 RUN addgroup --system nonrootgorup
 
-RUN  adduser --system nonrootuser --group nonrootgorup
+RUN  adduser --system nonrootuser --ingroup nonrootgorup
 
 USER nonrootuser
 
