@@ -14,6 +14,7 @@ RUN pip install /code
 
 COPY ./controller /code/controller
 
+# Added thoses 3  next line to remove Security Hotspot
 RUN addgroup --system nonrootgorup
 
 RUN  adduser --system nonrootuser --ingroup nonrootgorup

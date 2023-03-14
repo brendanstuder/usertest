@@ -20,7 +20,7 @@ test:
     - pip install -r requirements.txt
     - pytest
 
-# Using kaniko, which is an laternative for Docker, because the our Gitlab runners are not configured to build and push images with Docker.
+# Using kaniko, which is an laternative for Docker, because our Gitlab runners are not configured to build and push images with Docker.
 build:
   stage: build
   image:
